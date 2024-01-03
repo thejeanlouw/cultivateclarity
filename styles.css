@@ -18,8 +18,16 @@ body, html {
 }
 
 .logo {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Adjust if the logo is too wide */
+    display: block; /* Ensures the logo isn't inline */
+    margin: 0 auto; /* Centers the logo if container has a defined width */
+    background-color: #eceedd;
+    border-radius: 4px;
+}
+
+.logo img {
+    width: 50%;
+    max-height: 400px;
 }
 
 .content {
