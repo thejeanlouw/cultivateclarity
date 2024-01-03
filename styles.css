@@ -72,8 +72,17 @@ p {
 }
 
 @media (max-width: 600px) {
+    .container {
+        margin: 10px; /* Reduces the margin for smaller screens */
+        padding: 10px; /* Reduces the padding for smaller screens */
+    }
+
+    .logo img {
+        max-height: 200px; /* Further reduces the logo size on very small screens */
+    }
+
     .content, .contact-us {
-        width: 90%;
-        box-sizing: border-box;
+        width: 100%; /* Allows the content and button to fill the available width */
+        box-sizing: border-box; /* Ensures padding doesn't add to the width */
     }
 }
