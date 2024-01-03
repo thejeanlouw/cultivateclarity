@@ -1,0 +1,71 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #f2f2f2; /* Adjusted to a neutral background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    background: #fff; /* White background for content box */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #004648; /* Color matched to the logo */
+    margin-bottom: 1rem;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.coming-soon {
+    font-weight: 700;
+    color: #004648; /* Color matched to the logo */
+    margin-bottom: 2rem;
+}
+
+.contact-us {
+    background-color: #004648; /* Green background for the button */
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none; /* Removes underline from link */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.contact-us:hover {
+    background-color: #eceedd; /* Darker green on hover */
+}
+
+@media (max-width: 600px) {
+    .content, .contact-us {
+        width: 90%;
+        box-sizing: border-box;
+    }
+}
